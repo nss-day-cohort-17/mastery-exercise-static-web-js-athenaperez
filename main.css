@@ -16,6 +16,11 @@ body {
 h4 {
 	text-align: center;
 	text-decoration: underline;
+	font-size: 1.5em;
+}
+
+h2 {
+	text-align: justify;
 }
 
 .justify {
