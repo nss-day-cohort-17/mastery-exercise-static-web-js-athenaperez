@@ -30,9 +30,64 @@ h2 {
 
 .wrapper {
 	width: 80%;
-/*	margin-left: 5%;*/
+	margin: 2% auto 5% auto;
 	height: auto;
 	background-color: white;
 	opacity: .8;
 	padding: 5% 10% 5% 10%;
 }
+
+
+/************************
+INPUT STYLES
+***********************/
+
+
+
+.heightInput {
+	background-color: #009933;
+	font-size: 1em;
+	margin: 1%;
+	padding: .8%;
+	margin-top: 5%;
+}
+
+.characterUsed {
+	background-color: #ff3333;
+	font-size: 1em;
+	margin: 1%;
+	padding: .8%;
+}
+
+button {
+	background-color: #e6e6ff;
+	padding: .8% 2em .8% 2em;
+	margin: 3% auto 5% auto;
+	border-radius: 40%;
+}
+
+
+/************************
+PLACEHOLDER TEXT
+************************/
+
+::-webkit-input-placeholder {
+   color: black;
+   text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
