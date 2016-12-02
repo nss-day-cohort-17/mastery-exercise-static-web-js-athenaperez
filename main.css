@@ -8,8 +8,8 @@ body {
 	text-align: center;
 	font-family: 'Reem Kufi', sans-serif;
 	background-image: url(img/tree.jpg);
-	background-repeat: top-repeat;
-	background-size: 100%;
+/*	background-repeat: top-repeat;*/
+	background-size: cover;
 
 }
 

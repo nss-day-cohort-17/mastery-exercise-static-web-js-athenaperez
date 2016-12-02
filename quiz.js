@@ -6,12 +6,38 @@
 
 
 
+// event listeners for enter/return key -- height
 
 
 
 
 
 
+
+
+// event listeners for enter/return key -- character
+
+
+
+
+
+
+
+
+// event listener -- button
+
+
+
+
+
+
+
+// functions
+
+
+
+
+// if/alert -- either input field does not have a value
 
 
 
