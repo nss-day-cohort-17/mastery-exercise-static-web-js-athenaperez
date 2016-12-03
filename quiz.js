@@ -1,8 +1,9 @@
 
 
-
-
-
+// first alert
+alert("Welcome! Please make sure your browser is maximized and dev tools closed to begin, as "
+	+ "I am still learning responsivness " +
+	"¯/_(ツ)_/¯");
 
 
 

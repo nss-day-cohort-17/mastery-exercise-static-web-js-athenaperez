@@ -3,30 +3,45 @@
   <head>
 
     <title>The Static Web JavaScript Mastery Exercise</title>
+
     <link rel="stylesheet" type="text/css" href="main.css">
-    <link href="https://fonts.googleapis.com/css?family=Reem+Kufi" rel="stylesheet">
+
 
   </head>
 
   <body>
-    <h1>The Static Web: JavaScript Quiz</h1>
+
+    <div class="navigation">
+
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#instructions">Instructions</a></li>
+        </ul>
+      </nav>
+
+    </div>
 
 
-    <div class="wrapper">
-      <div class="heightDiv">
+
+
+    <div id="home"> <!-- input form -->
+
+      <div class="heightDiv"> <!-- height input -->
         <input class="heightInput" type="text" name="Height of tree" size="40%" maxlength="2" placeholder="Enter a Number">
-      </div>
+      </div> <!-- /height input -->
 
-      <div class="charcterDiv">
+      <div class="charcterDiv"> <!-- character input -->
         <input class="characterUsed" type="text" name="Height of tree" size="40%" maxlength="1" placeholder="Enter Your Favorite Keyboard Character">
-      </div>
+      </div> <!-- /character input -->
 
-      <div class="button">
+      <div class="button"> <!-- button input -->
         <button id="button">
           Grow Your Tree!
         </button>
-      </div>
-    </div>
+      </div> <!-- /button input -->
+
+    </div> <!-- /input form -->
 
 
 
@@ -37,7 +52,7 @@
 
 <!-- instructions for mastery exercise -->
 
-        <h4>Instructions</h4>
+        <h4 id="instructions">Instructions</h4>
 
         <p class="justify">Create a tree function that should build a pine tree out of a character in the Chrome dev tools console.</p>
 
@@ -69,6 +84,15 @@
         <p>*************</p>
         </p>
       </div>
+
+  <footer id="footer">
+
+
+        <p>&copy; 2016 Athena Perez.</p>
+  </footer>
+
+
+
 
 
     <script src="quiz.js" charset="utf-8"></script>
