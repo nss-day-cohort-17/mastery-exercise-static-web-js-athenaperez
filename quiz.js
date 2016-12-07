@@ -1,9 +1,14 @@
 
 
 // first alert
-alert("Welcome! Please make sure your browser is maximized and dev tools closed to begin, as "
-	+ "I am still learning responsivness " +
-	"¯/_(ツ)_/¯");
+// alert("Welcome! Please make sure your browser is maximized and dev tools closed to begin, as "
+// 	+ "I am still learning responsivness " +
+// 	"¯/_(ツ)_/¯");
+
+
+
+
+
 
 
 
@@ -12,7 +17,36 @@ alert("Welcome! Please make sure your browser is maximized and dev tools closed 
 
 
 
+// functions
 
+function growTree(treeSpecs) {
+	for (var i = 0; i < heightInput; i++) {
+		var treeLine = "*";
+	console.log(characterUsed.repeat[i]);
+	}
+}
+
+
+//event listener for button
+
+	var treeSpecs = {}
+
+	function buttonClick() {
+	treeSpecs.height = document.getElementById("heightInput").value
+	treeSpecs.character = document.getElementById("characterUsed").value
+	console.log(treeSpecs)
+	growTree(treeSpecs)
+}
+
+document.getElementById("button").addEventListener("click", buttonClick)
+
+growTree()
+
+
+
+// heightDiv
+
+// charcterDiv
 
 
 
@@ -31,9 +65,6 @@ alert("Welcome! Please make sure your browser is maximized and dev tools closed 
 
 
 
-
-
-// functions
 
 
 

@@ -124,7 +124,7 @@ INPUT STYLES
 
 
 
-.heightInput {
+#heightInput {
 	background-color: #55af02;
 	font-size: 1em;
 	margin: 1%;
@@ -132,7 +132,7 @@ INPUT STYLES
 	margin-top: 25%;
 }
 
-.characterUsed {
+#characterUsed {
 	background-color: #cc2e2d;
 	font-size: 1em;
 	margin: 1%;
