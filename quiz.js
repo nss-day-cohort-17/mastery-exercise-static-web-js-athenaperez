@@ -1,111 +1,71 @@
-
-
 // first alert
-// alert("Welcome! Please make sure your browser is maximized and dev tools closed to begin, as "
-// 	+ "I am still learning responsivness " +
-// 	"¯/_(ツ)_/¯");
+alert("Welcome! Please make sure your browser is maximized and dev tools closed to begin, as "
+	+ "I am still learning responsivness " +
+	"¯/_(ツ)_/¯");
+
+//***********************************
+// empty object to hold tree specs -->
+//***********************************
+var treeSpecs =  {};
 
 
-
-
-
-
-
-
-// event listeners for enter/return key -- height
-
-
-
-
-// functions
-
-function growTree(treeSpecs) {
-	for (var i = 0; i < heightInput; i++) {
-		var treeLine = "*";
-	console.log(characterUsed.repeat[i]);
+//***********************************
+//collect and store user input
+//***********************************
+function buttonClick() {
+	treeSpecs.height = document.getElementById("height-input").value;
+	treeSpecs.character = document.getElementById("character-used").value;
+	if (checkInput()){
+		console.log(treeSpecs);
+		growTree(treeSpecs);
 	}
-}
+};
 
 
-//event listener for button
-
-	var treeSpecs = {}
-
-	function buttonClick() {
-	treeSpecs.height = document.getElementById("heightInput").value
-	treeSpecs.character = document.getElementById("characterUsed").value
-	console.log(treeSpecs)
-	growTree(treeSpecs)
-}
-
-document.getElementById("button").addEventListener("click", buttonClick)
-
-growTree()
+//***********************************
+//loop through user inputs
+//***********************************
+function growTree(treeSpecsArg) {
+	for (var i = 0; i < treeSpecsArg.height; i++) {
+		var output = " ".repeat(treeSpecsArg.height - i - 1)
+		output += treeSpecsArg.character.repeat(i * 2 + 1)
+		console.log(output);
+	}
+};
 
 
-
-// heightDiv
-
-// charcterDiv
-
-
-
-// event listeners for enter/return key -- character
-
-
-
-
-
+//***********************************
+// alert for empty input fields
+//***********************************
+function checkInput() {
+  if (document.getElementById("height-input").value === "" || document.getElementById("character-used").value === "") {
+    alert("Both feilds must have a value");
+    return false;
+  } else {
+    return true;
+  }
+};
 
 
+//***********************************
+// listen for button click and return keypresses
+//***********************************
 
-// event listener -- button
+//event listener for button click
+document.getElementById("button").addEventListener("click" || "keypress", buttonClick);
 
+//event listener for return on height line
+document.getElementById("height-input").addEventListener("keypress",
+	function(e) {
+		if (e.key == "Enter") {
+			buttonClick();
+		}
+	});
 
-
-
-
-
-
-
-
-// if/alert -- either input field does not have a value
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Create a tree function that should build a pine tree out of a character in the Chrome dev tools console.
-
-// It accepts a single object as an argument. The object should have two key/value pairs.
-
-// A key that specifies the height of the pine tree.
-// The value for the height of the tree should be from user input in a <input type="text"> field in the DOM.
-// A key that specifies which character to use to build the pine tree.
-// The character to use should be from user input in a <input type="text"> field in the DOM.
-// Once the user enters in a number, and a character, the user can either then just press the enter key (as long as the cursor is in one of the input fields), or click a button that is labeled "Grow your tree" and the tree should be shown in the console. This requires you to add an event listener to the button, as well as an event listener for the enter/return key.
-
-// If either of the input fields does not have a value in it when the user presses the enter key, or presses the button, then display an alert stating that both fields must have a value.
-
-// Grow your tree
-
-// Example
-
-// Here's what the pine tree should look like when you specify a height of 7, and use the asterisk character.
-
-//       *
-//      ***
-//     *****
-//    *******
-//   *********
-//  ***********
-// *************
+//event listener for return on character line
+document.getElementById("character-used").addEventListener("keypress",
+	function(e) {
+		if (e.key == "Enter") {
+			buttonClick();
+		}
+	});
